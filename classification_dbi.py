@@ -6,8 +6,9 @@ load_dotenv()
 db_name = os.getenv("DATABASE")
 hostname = os.getenv("HOSTNAME")
 port = os.getenv("PORT")
-username = os.getenv("USERNAME")
+username = os.getenv("LOGIN")
 password = os.getenv("PASSWORD")
+# print(db_name, hostname, port, username, password)
 connection = db.connect(f'DATABASE={db_name};'
                         f'HOSTNAME={hostname};'
                         f'PORT={port};'
